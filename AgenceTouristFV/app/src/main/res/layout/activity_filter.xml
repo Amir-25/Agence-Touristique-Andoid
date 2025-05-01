@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#021C2C"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filtres_de_recherches"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_de_voyage"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="12dp"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/radioCulturel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/culturel"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioAventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aventure"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioBienEtre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bien_tre"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioNature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nature"
+            android:textColor="#FFFFFF" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnVoirDates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/voir_les_dates_disponibles"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#004d61"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editDestination"
+        style="@style/CustomInput"
+        android:hint="@string/destination" />
+
+    <EditText
+        android:id="@+id/editDate"
+        style="@style/CustomInput"
+        android:hint="@string/date_de_d_part"
+        android:focusable="false"
+        android:clickable="true" />
+
+    <EditText
+        android:id="@+id/editBudget"
+        style="@style/CustomInput"
+        android:inputType="number"
+        android:hint="@string/budget_maximum" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/SecondaryButton"
+            android:text="@string/annuler" />
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnApplyFilters"
+            style="@style/PrimaryButton"
+            android:text="@string/appliquer"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#34C9F5"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+</LinearLayout>
